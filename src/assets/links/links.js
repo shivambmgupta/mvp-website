@@ -4,7 +4,7 @@
 
 import { Developer } from "../../constants/constants";
 
-export default {
+const AboutDeveloper = {
     HiGif: `https://media.giphy.com/media/hvRJCLFzcasrR4ia7z/giphy.gif`,
     Developer: {
         mailTo: `mailto:shivambmgupta@gmail.com`,
@@ -38,3 +38,5 @@ export default {
         ]
     }  
 }
+
+export default AboutDeveloper;
