@@ -1,0 +1,10 @@
+.wrapper {
+    border-width: 1px solid black;
+    border-radius: 5px;
+    margin-bottom: 50px;
+}
+
+.customLink {
+    color: cadetblue !important;
+    text-decoration-line: none;
+}
