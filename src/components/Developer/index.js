@@ -11,7 +11,7 @@ const AboutDeveloper = () => {
                 <p>{Developer.ABOUT}</p>
                 <div>
                     <h4>
-                        <a className={styles.customLink} href={Links.Developer.mailTo}>{Developer.USERNAME}</a> | <a className={styles.customLink} href={Links.Developer.resume}>Resume</a>
+                        <a className={styles.customLink} href={Links.Developer.mailTo} target="_blank" rel="noopener noreferrer">{Developer.USERNAME}</a> | <a className={styles.customLink} href={Links.Developer.resume} target="_blank" rel="noopener noreferrer">Resume</a>
                     </h4>
                 </div>
             </div>
@@ -20,7 +20,7 @@ const AboutDeveloper = () => {
                     {
                         Links.Developer.social_medias.map(social_media => {
                             return (
-                                <a className={styles.stdMargin} key={social_media.url} href={social_media.url}>
+                                <a className={styles.stdMargin} key={social_media.url} href={social_media.url} target="_blank" rel="noopener noreferrer">
                                     <img alt={social_media.description} style={{ color: 'white' }} width="22px" src={social_media.icon} />
                                 </a>
                             )
