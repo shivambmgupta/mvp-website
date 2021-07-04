@@ -5,6 +5,10 @@
 }
 
 .customLink {
-    color: cadetblue !important;
     text-decoration-line: none;
+}
+
+.title {
+    color: rgb(51, 107, 109) !important;
+    font-weight: bold;
 }

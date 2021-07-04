@@ -1,0 +1,19 @@
+.bar {
+    list-style-type: none;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+}
+
+.element {
+    margin-right: 15px; 
+    color: black;
+    text-decoration-line: none;
+}
+
+@media screen and (max-width: 600px) {
+    .bar {
+        justify-content: center;
+        align-items: center;
+    }
+}

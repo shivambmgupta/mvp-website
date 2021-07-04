@@ -10,6 +10,11 @@
     justify-content: space-between;
 }
 
+.title {
+    font-weight: bold;
+    color: white !important;
+}
+
 .stdMargin {
     margin: 5px;
 }
