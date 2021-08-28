@@ -24,6 +24,12 @@ export const Blogs = [
         url: 'https://shivambmgupta.medium.com/eslint-what-why-when-how-7353a10e65c5',
         key: 1,
     },
+    {
+        heading: 'Best React Practices',
+        content: 'In this blog, I’d be explaining few best practices when working with React/React-Native or any other javascript application. Following are the guidelines will not only reduce the pitfalls but can also make your code more scalable. For more details please read my ',
+        url: 'https://shivambmgupta.medium.com/best-react-practices-fb0f31d9ec16',
+        key: 2,
+    },
 ];
 
 export const Pages = [
