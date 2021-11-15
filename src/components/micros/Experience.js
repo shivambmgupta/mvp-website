@@ -5,7 +5,7 @@ import { getTimeDifference } from '../../utils/common';
 import { useWindowSize } from 'react-use';
 import styles from './style.module.css';
 
-const getLable = (content, job) => `${getTimeDifference(job.fromDate, job.current ? new Date() : job.endDate, 2, false)} | ${job.fromDate.toLocaleDateString(content.dateFormat, content.dateOptions)} - ${job.current ? 'Current' : job.endDate.toLocaleDateString(content.dateFormat, content.dateOptions)}`;
+const getLable = (content, job) => `${getTimeDifference(job.fromDate, job.current ? new Date() : job.endDate, 2, false)} | ${job.fromDate.toLocaleDateString(content.dateFormat, content.dateOptions)} - ${job.current ? 'Present' : job.endDate.toLocaleDateString(content.dateFormat, content.dateOptions)}`;
 
 const Experience = ({ content }) => {
     const [mode, setMode] = useState("alternate");

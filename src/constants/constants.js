@@ -11,25 +11,40 @@ export const Developer = {
     ABOUT: 'I\'m a simple developer, who reads widely. Curious enough to learn every day. Passionate enough to keep myself up to date. Dedicated enough to create something better.',
 };
 
+export const AlertData = {
+    showAlert: true,
+    alterType: 'info',
+    closable: true,
+    heading: 'NPM Module Release Note!',
+    description: `
+        Hi, I have recently released my NPM Package for react-native named as 'rn-circular-bar'.
+        If you are a developer, please have a look at it. It had already reached 81 weekly downloads!
+    `,
+    actionLink: `https://www.npmjs.com/package/rn-circular-bar`
+}
+
 export const Blogs = [
+    {
+        heading: 'Best React Practices',
+        content: 'In this blog, I’d be explaining few best practices when working with React/React-Native or any other javascript application. Following are the guidelines will not only reduce the pitfalls but can also make your code more scalable. For more details please read my ',
+        url: 'https://dev.to/shivambmgupta/best-react-practices-bp8',
+        views: '13,000+',
+        key: 2,
+    },
     {
         heading: 'Containment, Specialization and Inheritance in React-Native/React',
         content: 'In this blog, I have covered Containment, Specialization and Inheritance in React/React-Native, the difference between them and how using these concepts with help you go DRY (Don\'t Repeat Yourself) and save you from writing redundant code ',
         url: ' https://shivambmgupta.medium.com/containment-specialization-and-inheritance-in-react-native-react-8fffaf789b94',
         key: 0,
+        views: '150+'
     },
     {
         heading: 'ESLint: What, Why, When, How',
         content: 'Your javascript project can have pitfalls if not dealt with care. Linting tools like ESLint makes your codebase way more consistent, less error-prone. With ESLint, you can impose code standards/guidelines by setting up standalone rules, which you can turn off and on. In just few steps, you can make your medium to large-scaled non-trivial javascript application consistent in terms of the codebase. For more details please read my ',
         url: 'https://shivambmgupta.medium.com/eslint-what-why-when-how-7353a10e65c5',
         key: 1,
-    },
-    {
-        heading: 'Best React Practices',
-        content: 'In this blog, I’d be explaining few best practices when working with React/React-Native or any other javascript application. Following are the guidelines will not only reduce the pitfalls but can also make your code more scalable. For more details please read my ',
-        url: 'https://shivambmgupta.medium.com/best-react-practices-fb0f31d9ec16',
-        key: 2,
-    },
+        views: '850+'
+    }
 ];
 
 export const Pages = [
@@ -60,7 +75,10 @@ export const BlogConstants = {
 export const profile = {
     about: {
         heading: 'About',
-        body: 'I\'m a simple developer, who reads widely. Curious enough to learn every day. Passionate enough to keep myself up to date. Dedicated enough to create something better.',
+        body: `
+            Hi, I'm Shivam. I write code, follow people who write code, live around people who write code. I'm always inspired by Ryan Dahl, Guillermo Rauch, Ben Noordhuis. 
+            Other than writing the code, I like reading Physics, 5 miles sprint daily, cooking, documentaries. And, yes - I have a life.
+        `,
     },
     experience: {
         heading: 'Experience',
@@ -68,18 +86,18 @@ export const profile = {
         dateFormat: 'en-US',
         body: [
             {
-                companyName: 'Radiance Technologies LLC',
-                profile: 'SDE I',
-                about: 'MERN Stack Developer, working on both React and React-Native. Directing our software programming initiatives. Developing and executing project plans. Shaping the future of our systems. Overseeing the development of documentation.',
-                fromDate: new Date(2021, 6, 1),
-                current: true,
+                companyName: 'Signzy',
+                profile: 'Software Development Engineer - 1',
+                about: 'MERN Stack Developer. Developing applications, collaborating with senior leaders. Executing project plans. Shaping the future of our systems. Overseeing the development of documentation.Proactively learning about new technologies',
+                fromDate: new Date(2021, 9, 1),
+                current: true
             },
             {
                 companyName: 'Radiance Technologies LLC',
                 profile: 'Intern',
-                about: 'MERN Stack Developer. Developing applications. Collaborating with senior leaders. Proactively learning about new technologies',
+                about: 'MERN Stack Developer. Developing applications, collaborating with senior leaders. Executing project plans. Shaping the future of our systems. Overseeing the development of documentation.Proactively learning about new technologies',
                 fromDate: new Date(2020, 8, 1),
-                endDate: new Date(2021, 5, 30),
+                endDate: new Date(2021, 8, 30),
             },
             {
                 companyName: 'Thinking Machines',

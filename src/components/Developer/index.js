@@ -9,7 +9,7 @@ const AboutDeveloper = () => (
             <h2 className={styles.title}>{Developer.DEVELOPER}</h2>
             <p>{Developer.ABOUT}</p>
             <div>
-                <h4>
+                <h4 className={styles.customLink}>
                     <a className={styles.customLink} href={Links.Developer.mailTo} target="_blank" rel="noopener noreferrer">{Developer.USERNAME}</a> | <a className={styles.customLink} href={Links.Developer.resume} target="_blank" rel="noopener noreferrer">Resume</a>
                 </h4>
             </div>
