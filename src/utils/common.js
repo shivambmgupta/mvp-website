@@ -46,5 +46,5 @@ export function getTimeDifference(fromDate, toDate, levels, prefix) {
         } else if (past) returnString = langFn('date.past', [returnString]);
         else returnString = langFn('date.future', [returnString]);
     }
-    return returnString || 'O+ month';
+    return returnString || '1+ month';
 }

@@ -8,7 +8,7 @@ const AboutDeveloper = {
     HiGif: 'https://media.giphy.com/media/hvRJCLFzcasrR4ia7z/giphy.gif',
     Developer: {
         mailTo: 'mailto:shivambmgupta@gmail.com',
-        resume: 'https://drive.google.com/file/d/1O3NMgjSMWP0oci_N8wdH3nVR5I3QvRPE/view?usp=sharing',
+        resume: 'https://drive.google.com/file/d/1K9VMREr8KAkcSNx4Hl50AvVrqsXiRxg3/view?usp=sharing',
         social_medias: [
             {
                 url: 'https://www.facebook.com/shivambmgupta',
