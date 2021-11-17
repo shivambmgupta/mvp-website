@@ -88,7 +88,12 @@ export const profile = {
             {
                 companyName: 'Signzy',
                 profile: 'Software Development Engineer - 1',
-                about: 'MERN Stack Developer. Developing applications, collaborating with senior leaders. Executing project plans. Shaping the future of our systems. Overseeing the development of documentation.Proactively learning about new technologies',
+                about: `
+                    Working on Video-KYC tool for digital on-boarding
+                    which is being used by Banks like SBI, HSBC, Citi,
+                    Amazon Pay, CCIL (RBI) and others. This tool helps 
+                    the monthly on-boarding of around 150k people per month.
+                `,
                 fromDate: new Date(2021, 9, 1),
                 current: true
             },
