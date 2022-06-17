@@ -3,6 +3,7 @@
 // Todo: Download these content to local to avoid unnecessary dependency on third party
 
 import { Developer } from '../../constants/constants';
+import facebookLogo from '../media/svgs/facebook.svg';
 
 const AboutDeveloper = {
     HiGif: 'https://media.giphy.com/media/hvRJCLFzcasrR4ia7z/giphy.gif',
@@ -12,7 +13,7 @@ const AboutDeveloper = {
         social_medias: [
             {
                 url: 'https://www.facebook.com/shivambmgupta',
-                icon: 'https://raw.githubusercontent.com/peterthehan/peterthehan/master/assets/facebook.svg',
+                icon: facebookLogo,
                 description: `${Developer.DEVELOPER} | Facebook`, // META Data | alt text
             },
             {
