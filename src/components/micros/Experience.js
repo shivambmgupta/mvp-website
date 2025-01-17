@@ -26,7 +26,7 @@ const Experience = ({ content }) => {
                         >
                             <div>
                                 <h3>
-                                    {job.profile} at {job.companyName}
+                                    {job.profile} @{job.companyName}
                                 </h3>
                                 {mode === 'left' && <p>{getLable(content, job)}</p>}
                                 <p>{job.about}</p>

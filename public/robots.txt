@@ -1,3 +1,15 @@
 # https://www.robotstxt.org/robotstxt.html
 User-agent: *
-Disallow:
+Disallow: /admin/
+Disallow: /login/
+Disallow: /dashboard/
+Disallow: /api/
+Disallow: /tmp/
+Disallow: /private/
+Disallow: /user-profile/
+
+Allow: /blogs/
+Allow: /about/
+
+Sitemap: https://shivambmgupta.netlify.app/sitemap.xml
+
