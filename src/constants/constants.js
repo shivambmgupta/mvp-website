@@ -8,54 +8,53 @@ export const Developer = {
     DEVELOPER: 'Shivam Gupta',
     USERNAME: '@shivambmgupta',
     HEADING: 'Hi, I\'m Shivam Gupta',
-    ABOUT: 'I\'m a simple developer, who reads widely. Curious enough to learn every day. Passionate enough to keep myself up to date. Dedicated enough to create something better.',
+    ABOUT: `Software Engineer in Fintech, specializing in building scalable, high-performance applications. Passionate about innovation and solving complex engineering challenges.`
 };
 
 export const AlertData = {
     showAlert: true,
     alterType: 'info',
     closable: true,
-    heading: 'NPM Module Release Note!',
+    heading: 'Exciting NPM Update!',
     description: `
-        Hi, I have recently released my NPM Package for react-native named as 'rn-circular-bar'.
-        If you are a developer, please have a look at it. It had already reached 81 weekly downloads!
+        The latest release of my React Native NPM package 'rn-circular-bar' is now live! Optimized for performance and enriched with advanced features, it has garnered significant traction, peaking at over 81 weekly downloads. Check it out today!
     `,
-    actionLink: `https://www.npmjs.com/package/rn-circular-bar`
-}
+    actionLink: `https://www.npmjs.com/package/rn-circular-bar`,
+};
 
 export const Blogs = [
     {
         heading: 'Best React Practices',
-        content: 'In this blog, I’d be explaining few best practices when working with React/React-Native or any other javascript application. Following are the guidelines will not only reduce the pitfalls but can also make your code more scalable. For more details please read my ',
+        content: 'Discover proven strategies for building robust, maintainable, and scalable React applications. Dive into techniques for optimizing workflows and enforcing clean, modular architecture.',
         url: 'https://dev.to/shivambmgupta/best-react-practices-bp8',
-        views: '13,000+',
+        views: '18,000+',
         key: 2,
     },
     {
-        heading: 'Containment, Specialization and Inheritance in React-Native/React',
-        content: 'In this blog, I have covered Containment, Specialization and Inheritance in React/React-Native, the difference between them and how using these concepts with help you go DRY (Don\'t Repeat Yourself) and save you from writing redundant code ',
-        url: ' https://shivambmgupta.medium.com/containment-specialization-and-inheritance-in-react-native-react-8fffaf789b94',
+        heading: 'Containment, Specialization and Inheritance in React',
+        content: 'A comprehensive exploration of advanced React paradigms, including containment, specialization, and inheritance. Master these techniques to write DRY, reusable components.',
+        url: 'https://shivambmgupta.medium.com/containment-specialization-and-inheritance-in-react-native-react-8fffaf789b94',
+        views: '1,500+',
         key: 0,
-        views: '150+'
     },
     {
         heading: 'ESLint: What, Why, When, How',
-        content: 'Your javascript project can have pitfalls if not dealt with care. Linting tools like ESLint makes your codebase way more consistent, less error-prone. With ESLint, you can impose code standards/guidelines by setting up standalone rules, which you can turn off and on. In just few steps, you can make your medium to large-scaled non-trivial javascript application consistent in terms of the codebase. For more details please read my ',
+        content: 'Elevate your JavaScript projects by integrating ESLint. Learn how it enforces consistency, automates code quality, and prevents anti-patterns.',
         url: 'https://shivambmgupta.medium.com/eslint-what-why-when-how-7353a10e65c5',
+        views: '25,000+',
         key: 1,
-        views: '850+'
     }
 ];
 
 export const Pages = [
     {
-        pageLink: '/',
+        pageLink: '/blogs',
         view: BlogList,
         displayName: 'Blogs',
         showInNavbar: true,
     },
     {
-        pageLink: '/about',
+        pageLink: '/',
         view: About,
         displayName: 'About',
         showInNavbar: true,
@@ -76,8 +75,7 @@ export const profile = {
     about: {
         heading: 'About',
         body: `
-            Hi, I'm Shivam. I write code, follow people who write code, live around people who write code. I'm always inspired by Ryan Dahl, Guillermo Rauch, Ben Noordhuis. 
-            Other than writing the code, I like reading Physics, 5 miles sprint daily, cooking, documentaries. And, yes - I have a life.
+            I am Shivam Gupta, a Software Engineer with a focus in FinTech and deep expertise in the MERN stack. I am committed to staying at the forefront of emerging technologies. Beyond engineering, I am passionate about physics, long-distance running, and culinary experimentation.
         `,
     },
     experience: {
@@ -87,30 +85,29 @@ export const profile = {
         body: [
             {
                 companyName: 'Signzy',
-                profile: 'Software Development Engineer - 1',
+                profile: 'Software Development Engineer - II',
                 about: `
-                    Working on Video-KYC tool for digital on-boarding
-                    which is being used by Banks like SBI, HSBC, Citi,
-                    Amazon Pay, CCIL (RBI) and others. This tool helps 
-                    the monthly on-boarding of around 150k people per month.
+                    Lead the development of Digital-Onboarding platforms utilized by enterprise clients including SBI, HSBC, Citi, Yes Bank, HDFC, and Amazon Pay. Module owner for Analytics and Notifications, supporting seamless onboarding for over 500k users monthly. Leading a team of 7 engineers, ensuring adherence to agile methodologies, CI/CD pipelines, and code quality benchmarks.
+                `,
+                fromDate: new Date(2024, 9, 18),
+                current: true,
+            },
+            {
+                companyName: 'Signzy',
+                profile: 'Software Development Engineer - I',
+                about: `
+                    Played a pivotal role in engineering operations, including data migration for a multinational bank in compliance with RBI guidelines. Contributed to developing Digital-Onboarding solutions using Node.js and MongoDB with stringent FinTech compliance requirements. Delivered high-availability modules under aggressive timelines.
                 `,
                 fromDate: new Date(2021, 9, 1),
-                current: true
+                endDate: new Date(2024, 9, 17),
             },
             {
                 companyName: 'Radiance Technologies LLC',
                 profile: 'Intern',
-                about: 'MERN Stack Developer. Developing applications, collaborating with senior leaders. Executing project plans. Shaping the future of our systems. Overseeing the development of documentation.Proactively learning about new technologies',
+                about: 'Designed and delivered robust MERN stack applications while collaborating with cross-functional teams to meet project requirements and ensure timely delivery.',
                 fromDate: new Date(2020, 8, 1),
                 endDate: new Date(2021, 8, 30),
-            },
-            {
-                companyName: 'Thinking Machines',
-                profile: 'Intern',
-                about: 'Worked on C++ GUI Paint-like Project. Learnt QT, and designs principles in that span. Other technologies: C, Java, Python, HTML, CSS, JavaScript.',
-                fromDate: new Date(2020, 5, 1),
-                endDate: new Date(2020, 8, 30),
-            },
+            }
         ],
     },
     education: {
@@ -121,9 +118,9 @@ export const profile = {
             {
                 organization: 'Government Engineering College, Ujjain',
                 discipline: 'Computer Science & Engineering',
-                grade: '7.61/10',
+                grade: '7.8/10',
                 fromDate: new Date(2017, 5, 1),
-                endDate: new Date(2021, 6, 31),
+                endDate: new Date(2021, 6, 30),
             },
             {
                 organization: 'Rani Laxmibai Public School, Datia',
@@ -144,10 +141,12 @@ export const profile = {
     achievements: {
         heading: 'Achievements',
         body: [
-            'Delivered 3 MERN Stack Projects.',
-            'Delivered 1 freelance project.',
-            'Academic Star, 12 Std. (District Topper)',
-            '5 stars in Problem Solving at Hackerrank.',
+            'Architected and delivered scalable MERN stack applications, including Video-KYC and advanced analytics modules.',
+            'Led the technical design and implementation of Yes Bank’s Digital Onboarding Journey for savings accounts, credit cards, and AL (Work In Progress).',
+            'Successfully delivered a high-impact freelance project for 7Pence Advisors.',
+            'Solved 650+ problems on LeetCode, showcasing proficiency in problem-solving and optimization.',
+            'Recognized as an Academic Star and District Topper in 12th Grade.',
+            'Qualified for Google Code Jam Round 1 in both 2019 and 2020.',
         ],
     }
 };

@@ -18,6 +18,19 @@ const App = () => (
         <Suspense fallback={<div />}>
           <Router>
             <Navbar pages={Pages} />
+            <Switch>
+              {
+                Pages.map((page, index) => (
+                  <Route
+                    exact
+                    path={page.pageLink}
+                    render={() => <page.view />}
+                    key={index}
+                  />
+                ))
+              }
+              <Redirect to="/" />
+            </Switch>
             <Alert
               className="alert-container"
               message={AlertData.heading}
@@ -37,19 +50,6 @@ const App = () => (
                 </Button>
               }
             />
-            <Switch>
-              {
-                Pages.map((page, index) => (
-                  <Route
-                    exact
-                    path={page.pageLink}
-                    render={() => <page.view />}
-                    key={index}
-                  />
-                ))
-              }
-              <Redirect to="/" />
-            </Switch>
           </Router>
         </Suspense>
       </div>
