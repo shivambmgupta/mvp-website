@@ -1,9 +1,7 @@
 import React, { memo } from 'react';
-import styles from './style.module.css';
 
 const Intro = ({ content }) => (
-    <div>
-        <h1 className={styles.title}>{content.heading}</h1>
+    <div style={{ paddingTop: '34px' }}>
         <p>{content.body}</p>
     </div>
 );
