@@ -1,9 +1,9 @@
 import React, { memo, Suspense } from 'react';
 import { profile } from '../../constants/constants';
+import { Divider } from 'antd';
 
 const Intro = React.lazy(() => import('../micros/Intro'));
 const Experiences = React.lazy(() => import('../micros/Experience'));
-const Education = React.lazy(() => import('../micros/Education'));
 const Achievements = React.lazy(() => import('../micros/Achievements'));
 
 const About = memo(() => (
@@ -11,7 +11,7 @@ const About = memo(() => (
         <Suspense fallback={<div />}>
             <Intro content={profile.about} />
             <Experiences content={profile.experience} />
-            <Education content={profile.education} />
+            <Divider />
             <Achievements content={profile.achievements} />
         </Suspense>
     </div>

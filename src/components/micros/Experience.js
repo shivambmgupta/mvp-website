@@ -3,9 +3,8 @@ import { Timeline } from 'antd';
 import { CheckCircleTwoTone, ClockCircleTwoTone } from '@ant-design/icons';
 import { getTimeDifference } from '../../utils/common';
 import { useWindowSize } from 'react-use';
-import styles from './style.module.css';
 
-const getLable = (content, job) => `${getTimeDifference(job.fromDate, job.current ? new Date() : job.endDate, 2, false)} | ${job.fromDate.toLocaleDateString(content.dateFormat, content.dateOptions)} - ${job.current ? 'Present' : job.endDate.toLocaleDateString(content.dateFormat, content.dateOptions)}`;
+const getLable = (content, edu) => `${edu.yearOnly ? edu.year : getTimeDifference(edu.fromDate, edu.current ? new Date() : edu.endDate, 1, false)} ${edu.yearOnly ? '' : `| ${!edu.fromDate ? '' : edu.fromDate.toLocaleDateString(content.dateFormat, content.dateOptions)} - ${edu.current ? 'Current' : edu.endDate?.toLocaleDateString(content.dateFormat, content.dateOptions)}`}`;
 
 const Experience = ({ content }) => {
     const [mode, setMode] = useState("alternate");
@@ -15,7 +14,7 @@ const Experience = ({ content }) => {
     }, [windowSize.width]);
     return (
         <div>
-            <h1 className={styles.title}>{content.heading}</h1>
+            <br /><br />
             <Timeline mode={mode}>
                 {
                     content.body.map((job, index) => (
@@ -25,7 +24,7 @@ const Experience = ({ content }) => {
                             dot={job.current ? <ClockCircleTwoTone /> : <CheckCircleTwoTone />}
                         >
                             <div>
-                                <h3>
+                                <h3 style={{ fontWeight: 'bold' }}>
                                     {job.profile} @{job.companyName}
                                 </h3>
                                 {mode === 'left' && <p>{getLable(content, job)}</p>}

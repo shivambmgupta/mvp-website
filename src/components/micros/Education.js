@@ -25,7 +25,7 @@ const Education = ({ content }) => {
                             dot={edu.current ? <ClockCircleTwoTone /> : <CheckCircleTwoTone />}
                         >
                             <div>
-                                <h3>{`${edu.discipline}, ${edu.organization}`}</h3>
+                                <h2 style={{ fontWeight: 'bold' }}>{`${edu.discipline}, ${edu.organization}`}</h2>
                                 {mode === 'left' && <p>{getLable(content, edu)}</p>}
                                 <p>{`Grade: ${edu.grade}`}</p>
                             </div>
