@@ -1,11 +1,10 @@
 body {
   margin: 0;
-  font-family: 'Fira Mono', 'Courier New', Courier, monospace !important;
+  /* font-family: 'Fira Mono', 'Courier New', Courier !important; */
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   background-color: #fafafa !important;  /* Warm, creamy white */
-  color: #111111 !important;             /* Deep soft black for contrast */
-  font-weight: 550 !important;           /* Slightly bolder than normal (400) */
+  /* font-weight: 500 !important;           Slightly bolder than normal (400) */
 }
 
 code {
