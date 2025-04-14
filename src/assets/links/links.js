@@ -9,7 +9,7 @@ const AboutDeveloper = {
     HiGif: 'https://media.giphy.com/media/hvRJCLFzcasrR4ia7z/giphy.gif',
     Developer: {
         mailTo: 'mailto:shivambmgupta@gmail.com',
-        resume: 'https://drive.google.com/file/d/19z5LfqCgv9kRA2sV4uxfsRmG0O0yvOjg/view?usp=sharing',
+        resume: 'https://drive.google.com/file/d/15GN_Gk2OUWAvRCkTULTanYqz7ui4VrJq/view?usp=sharing',
         social_medias: [
             {
                 url: 'https://www.facebook.com/shivambmgupta',

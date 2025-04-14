@@ -3,8 +3,9 @@ import { StarTwoTone } from '@ant-design/icons';
 import styles from './style.module.css';
 
 const Achievements = ({ content }) => (
-    <div>
-        <h1 className={styles.title}>{content.heading}</h1>
+    <div style={{ paddingTop: '34px'}}>
+        <p className={styles.para} style={{ fontWeight: 'bold' }}>{content.about}</p>
+        <br />
         <ul className={styles.bar}>
             {
                 content.body.map((achievement, index) => (
